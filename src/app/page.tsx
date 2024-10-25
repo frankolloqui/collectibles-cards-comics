@@ -1,23 +1,15 @@
+import Header from "./header";
+import cards from '../../public/cards.jpg'
+
 export default function Home() {
   return (
     <div>
       {/* Header */}
-      <header className="bg-gray-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Trading Card Haven</h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="hover:text-yellow-500">Home</a></li>
-              <li><a href="#" className="hover:text-yellow-500">Products</a></li>
-              <li><a href="#" className="hover:text-yellow-500">Contact</a></li>
-              <li><a href="#" className="hover:text-yellow-500">About Us</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
-      <section className="bg-hero-pattern bg-cover bg-center h-[500px] flex items-center justify-center text-white">
+      <section className="bg-hero-pattern bg-cover bg-center h-[500px] flex items-center justify-center text-white " style={{backgroundImage: `url(${cards.src})`,}}>
+        {/* <Image src={cards} alt="Hero Image" width={1000} height={1000} /> */}
         <div className="text-center">
           <h2 className="text-4xl font-bold">Find Your Next Rare Trading Card</h2>
           <p className="mt-4 text-xl">Explore our wide selection of sports, collectible, and game cards.</p>
